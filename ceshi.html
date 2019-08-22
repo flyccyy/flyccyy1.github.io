@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 1000px;
+            /* height: 2000px; */
+            /* height: 2000px; */
+            background-color: pink;
+            /* background-color: pink; */
+        }
+    </style>
+</head>
+
+<body>
+    <p>测试</p>
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script>
+        function IframeResize() {
+            var obj = parent.document.getElementById("myIframe");
+            obj.height = this.document.body.scrollHeight;
+        }
+    </script>
+    
+    <!-- <script>
+        $(function(){
+            var winH = $(window).height(); //当前子页面的高
+            var bodyH = $(document).height(); //父页面的高
+            console.log(bodyH);
+            if(bodyH>winH){
+                window.parent.document.getElementById("myIframe").height = bodyH;
+            }else {
+                window.parent.document.getElementById("myIframe").height = winH;
+            }
+        })
+    </script> --> 
+</body>
+
+</html>

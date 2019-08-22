@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Source Code Pro","DejaVu Sans Mono","Ubuntu Mono","Anonymous Pro","Droid Sans Mono",Menlo,Monaco,Consolas,Inconsolata,Courier,monospace,"PingFang SC","Microsoft YaHei",sans-serif;
+        }
+        ol,
+        li {
+            list-style: none;
+            outline:0;
+        }
+        .box {
+            width: 962px;
+            margin:0 auto;
+            background-color: #ccc;
+        }
+        pre {
+            word-wrap: break-word;
+            /* 去除pre首行默认空行 */
+            white-space: pre-line;
+            width: 962px;
+            height: 274px;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        code {
+            word-wrap: break-word;
+            display:inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background-color: #2d2d2d;
+            padding: 8px;
+            border-radius: 4px;
+            /* 文本不换行 */
+            white-space: nowrap;
+        }
+        ol {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+        }
+        li {
+            height: 22px;
+        }
+        .numbers {
+            width: 24px;
+            height: 22px;
+            border-right: 1px solid #c5c5c5;
+            float: left;
+        }
+        .inner {
+            padding-right: 8px;
+            height: 22px;
+            text-align: center;
+            color:#fff;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .code {
+            float: left;
+            height: 22px;
+            line-height: 22px;
+        }
+        .code-inner {
+            margin-left: 8px;
+            height: 22px;
+            line-height: 22px;
+        }
+        span {
+            font-size: 16px;
+            color:#999;
+        }
+        span.purple {
+            color:rgb(204,153,204);
+        }
+        span.ccc {
+            color:#ccc;
+        }
+        span.green {
+            color:rgb(153,204,153);
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+        }
+        .content p {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+<h2>一、HTTP协议无状态</h2>
+<p>一旦数据交换完毕，客户端和服务器端的连接会关闭，再次交换数据需要建立新的连接，即服务器无法从连接上跟踪会话</p>
+<br>
+<h2>二、cookie</h2>
+<p>客户端第一次正常访问服务器，服务器在response headers中返回与用户信息相关的cookie，客户端收到后把cookie保存在本地，下次再发请求时会在request headers中带上这个cookie，服务器收到这个cookie就知道用户状态了，cookie可以设置过期时间，默认值是-1，表示关闭浏览器时cookie就会失效，值为0时表示立马失效，相当于删除cookie（cookie没有删除的方法），服务器和客户端都可以设置cookie，但不可以操作另一个域名下的cookie。</p>
+<br>
+<h2>三、session</h2>
+<p>客户端第一个正常访问服务器，服务器生成一个sessionid标识用户并保存用户信息（服务器有一个专门的地方来保存所有用户的sessionid），在response headers中作为cookie的一个值返回，客户端收到后把cookie保存在本地，下次再发请求时会在request headers中带上这个sessionid，服务器通过查找这个sessionid就知道用户状态了，并更新sessionid的最后访问时间，sessionid也会可以设置失效时间，比如如果60分钟内某个session都没有被更新，服务器就会删除它</p>
+</div>
+
+    <!-- 代码块 -->
+<div class="box">
+    <pre>
+        <code>
+            <ol>
+                <li>
+                    <div class="numbers">
+                        <div class="inner">1</div>
+                    </div>
+                    <div class="code">
+                        <div class="code-inner">
+                            <span>//这里只能用var定义变量,let,const定义的变量，不是绑定在window下。</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="numbers">
+                        <div class="inner">2</div>
+                    </div>
+                    <div class="code">
+                        <div class="code-inner">
+                            <span class="purple">var</span>
+                            <span class="ccc">  str = </span>
+                            <span class="green"> "window"</span>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </code>
+    </pre>
+</div>
+    <script>
+
+    </script>
+</body>
+</html>
+
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/template-web.js"></script>

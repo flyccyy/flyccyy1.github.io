@@ -1,147 +1,303 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>flyccyy-个人博客</title>
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fonts/iconfont.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>flyccyy-个人主页</title>
-    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./fonts/iconfont.css">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .dropdown {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <audio controls autoplay>
+      <source src="mp3/Approaching%20Nirvana%20-%20You.mp3" />
+    </audio>
+    <div id="background" class="wall"></div>
+    <div id="midground" class="wall"></div>
+    <div id="foreground" class="wall"></div>
+    <div id="top" class="wall"></div>
 
     <div class="container">
-        <div class="sideBar">
-            <div class="top">
-                <div class="pic">
-                    <img src="./images/pic.jpg" alt="" class="img-circle">
-                </div>
-                <span class="myName">Reflux Me</span>
-                <span class="professional">web designer</span>
-            </div>
-            <div class="list">
-                <ul>
-                    <!-- tab切换，不用hover 
-                    不是tab切换，应该是锚点定位-->
-                    <li><a href="#" class="current">about me</a></li>
-                    <li><a href="#">good at</a></li>
-                    <li><a href="#">my work</a></li>
-                    <li><a href="#">contact me</a></li>
-                </ul>
-            </div>
+      <div class="sideBar">
+        <div class="top">
+          <div class="pic">
+            <img src="./images/pic.jpg" alt="" class="img-circle" />
+          </div>
+          <span class="myName">冯丽莹flyccyy</span>
+          <span class="professional">web designer</span>
         </div>
-        <div class="main">
-            <div class="about">
-                <div class="about-top">
-                    <div class="title">
-                        My work
-                    </div>
-                    <div class="desc">
-                        Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit amet. Duis ac elit vulputate,
-                        lobortis arcu quis, vehicula mauris.
-                    </div>
-                </div>
-                <div class="about-content1">
-                    <div class="left-pic fl">
-                        <img src="./images/left-image.jpg" alt="">
-                    </div>
-                    <div class="right-desc fr">
-                        <div class="desc-title">Reflux HTML CSS Template</div>
-                        <div class="desc-con">Donec tristique feugiat lacus, at sollicitudin nunc euismod sed. Mauris
-                            viverra, erat non sagittis gravida, elit dui mollis ante, sit amet eleifend purus ligula
-                            eget eros. Sed tincidunt quam vitae neque pharetra dignissim eget ut libero.</div>
-                        <div class="desc-btn">
-                            <a href="#">READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content1">
-                    <div class="left-pic fr">
-                        <img src="./images/left-image.jpg" alt="">
-                    </div>
-                    <div class="right-desc fl">
-                        <div class="desc-title">Reflux HTML CSS Template</div>
-                        <div class="desc-con">Donec tristique feugiat lacus, at sollicitudin nunc euismod sed. Mauris
-                            viverra, erat non sagittis gravida, elit dui mollis ante, sit amet eleifend purus ligula
-                            eget eros. Sed tincidunt quam vitae neque pharetra dignissim eget ut libero.</div>
-                        <div class="desc-btn">
-                            <a href="#">READ MORE</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="about-content2"></div> -->
-            </div>
-            <div class="about">
-                <div class="about-top">
-                    <div class="title">
-                        学习笔记
-                    </div>
-                    <div class="desc">
-                        Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit amet. Duis ac elit vulputate,
-                        lobortis arcu quis, vehicula mauris.
-                    </div>
-                </div>
-                <div class="main-con">
-                    <div class="con-top">
-                        <div class="con-top-left fl">
-                            <i class="iconfont icon-html"></i>
-                            <div class="notes-first">
-                                <div class="notes-title">
-                                    HTML5
-                                </div>
-                                <p class="notes-desc">Phasellus non convallis dolor. Integer tempor hendrerit arcu at
-                                    bibendum. Sed ac ante non metus vehicula congue quis eget eros.</p>
-                            </div>
-                        </div>
-                        <div class="con-top-left fr">
-                            <i class="iconfont icon-html"></i>
-                            <div class="notes-first">
-                                <div class="notes-title">
-                                    HTML5
-                                </div>
-                                <p class="notes-desc">Phasellus non convallis dolor. Integer tempor hendrerit arcu at
-                                    bibendum. Sed ac ante non metus vehicula congue quis eget eros.</p>
-                            </div>
-                        </div>
-                        <!-- <div class="con-top-right fr"></div> -->
-                    </div>
-                    <div class="con-top">
-                        <div class="con-top-left fl">
-                            <i class="iconfont icon-html"></i>
-                            <div class="notes-first">
-                                <div class="notes-title">
-                                    HTML5
-                                </div>
-                                <p class="notes-desc">Phasellus non convallis dolor. Integer tempor hendrerit arcu at
-                                    bibendum. Sed ac ante non metus vehicula congue quis eget eros.</p>
-                            </div>
-                        </div>
-                        <div class="con-top-left fr">
-                            <i class="iconfont icon-html"></i>
-                            <div class="notes-first">
-                                <div class="notes-title">
-                                    HTML5
-                                </div>
-                                <p class="notes-desc">Phasellus non convallis dolor. Integer tempor hendrerit arcu at
-                                    bibendum. Sed ac ante non metus vehicula congue quis eget eros.</p>
-                            </div>
-                        </div>
-                        <!-- <div class="con-top-right fr"></div> -->
-                    </div>
-                    <!-- <div class="con-bottom"></div> -->
-                </div>
-                <!-- <div class="about-content2"></div> -->
-            </div>
+        <div class="list">
+          <ul>
+            <li><a href="#" class="current" id="abouta">个人信息</a></li>
+            <li><a href="#" id="notesa">学习笔记</a></li>
+            <li><a href="#">my work</a></li>
+            <li><a href="#">contact me</a></li>
+          </ul>
         </div>
+        <!-- <a target="myIframe" href="./main.html" style="float:right">啊啊啊啊啊</a> -->
+      </div>
+
+      <!--scrolling:no只是去掉滚动条，高度还是不变-->
+
+      <!-- onload="heightSet(this)" heightSet is not defined? -->
+      <iframe
+        name="myIframe"
+        src=""
+        frameborder="0"
+        id="myIframe"
+        scrolling="no"
+      ></iframe>
+      <div class="main">
+        <div class="about" id="about">
+          <div class="about-top">
+            <div class="title">
+              个人信息
+            </div>
+            <div class="desc">
+              Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.
+            </div>
+          </div>
+          <div class="about-content1">
+            <div class="left-pic fl">
+              <img src="./images/left-image.jpg" alt="" />
+            </div>
+            <div class="right-desc fr">
+              <div class="desc-title">Reflux HTML CSS Template</div>
+              <div class="desc-con">
+                Donec tristique feugiat lacus, at sollicitudin nunc euismod sed.
+                Mauris viverra, erat non sagittis gravida, elit dui mollis ante,
+                sit amet eleifend purus ligula eget eros. Sed tincidunt quam
+                vitae neque pharetra dignissim eget ut libero.
+              </div>
+              <div class="desc-btn">
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="about-content1">
+            <div class="left-pic fr">
+              <img src="./images/right-image.jpg" alt="" />
+            </div>
+            <div class="right-desc fl">
+              <div class="desc-title">Reflux HTML CSS Template</div>
+              <div class="desc-con">
+                Donec tristique feugiat lacus, at sollicitudin nunc euismod sed.
+                Mauris viverra, erat non sagittis gravida, elit dui mollis ante,
+                sit amet eleifend purus ligula eget eros. Sed tincidunt quam
+                vitae neque pharetra dignissim eget ut libero.
+              </div>
+              <div class="desc-btn">
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about" id="notes">
+          <div class="about-top">
+            <div class="title">
+              学习笔记
+            </div>
+            <div class="desc">
+              Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.
+            </div>
+          </div>
+          <div class="main-con">
+            <div class="con-top">
+              <div class="con-top-left fl">
+                <i class="iconfont icon-html"></i>
+                <div class="notes-first">
+                  <div class="notes-title">
+                    HTML5
+                  </div>
+                  <p class="notes-desc">
+                    Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                    at bibendum. Sed ac ante non metus vehicula congue quis eget
+                    eros.
+                  </p>
+                </div>
+
+                <a href="./html&css.html" id="btn1" target="myIframe"
+                  >阅读更多</a
+                >
+                <!-- <input type="button" value="阅读更多" id="btn1"> -->
+              </div>
+              <div class="con-top-left fr">
+                <i class="iconfont icon-html"></i>
+                <div class="notes-first">
+                  <div class="notes-title">
+                    HTML5
+                  </div>
+                  <p class="notes-desc">
+                    Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                    at bibendum. Sed ac ante non metus vehicula congue quis eget
+                    eros.
+                  </p>
+                </div>
+                <a href="./ceshi.html" id="btn1" target="myIframe">阅读更多</a>
+              </div>
+            </div>
+            <div class="con-top">
+              <div class="con-top-left fl">
+                <i class="iconfont icon-html"></i>
+                <div class="notes-first">
+                  <!-- 下拉框？写目录 -->
+
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-default dropdown-toggle btn-lg"
+                      type="button"
+                      id="dropdownMenu1"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="true"
+                    >
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li>
+                        <a href="./vuejs.html" id="btnvue" target="myIframe"
+                          >Vue指令</a
+                        >
+                      </li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-default dropdown-toggle btn-lg"
+                      type="button"
+                      id="dropdownMenu1"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="true"
+                    >
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li>
+                        <a href="./vuejs.html" id="btnvue" target="myIframe"
+                          >Vue指令</a
+                        >
+                      </li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-default dropdown-toggle btn-lg"
+                      type="button"
+                      id="dropdownMenu1"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="true"
+                    >
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li>
+                        <a href="./vuejs.html" id="btnvue" target="myIframe"
+                          >Vue指令</a
+                        >
+                      </li>
+                      <li><a href="#">vue第二天</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- <div class="notes-title">
+                                    HTML5
+                                </div>
+                                <p class="notes-desc">Phasellus non convallis dolor. Integer tempor hendrerit arcu at
+                                    bibendum. Sed ac ante non metus vehicula congue quis eget eros.</p> -->
+                </div>
+                <a href="#" class="more">阅读更多</a>
+              </div>
+              <div class="con-top-left fr">
+                <i class="iconfont icon-html"></i>
+                <div class="notes-first">
+                  <div class="notes-title">
+                    HTML5
+                  </div>
+                  <p class="notes-desc">
+                    Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                    at bibendum. Sed ac ante non metus vehicula congue quis eget
+                    eros.
+                  </p>
+                </div>
+                <a href="./nodejs.html" id="btn2" target="myIframe">阅读更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/bootstrap.min.js"></script>
+    <script src="./lib/js/index.js"></script>
+    <script>
+      // $('.dropdown-toggle').dropdown();
+    </script>
+    <script>
+      function heightSet(thisFrame) {
+        bodyHeight =
+          thisFrame.contentWindow.document.documentElement.scrollHeight;
+        //这行可代替上一行，这样heightSet函数的参数可以省略了
+        // bodyHeight = document.getElementById("myIframe").contentWindow.document.documentElement.scrollHeight;
 
+        document.getElementById("myIframe").height = bodyHeight;
+      }
+      // window.onload = function(){
+      //     var iframe = document.getElementById("myIframe");
+      //     iframe.style.height = window.innerHeight + "px";
+      // }
 
-    <link rel="stylesheet" href="./lib/js/bootstrap.min.js">
-</body>
+      // function changeF(){
+      //     var ifm = document.getElementById("myIframe");
+      //     ifm.height = document.documentElement.clientHeight;
+      // }
+      // window.onresize=function(){
+      //     changeF();
+      // }
 
+      // function setHeight(){
+      //     var ifm = document.getElementById("myIframe");
+      //     if(document.getElementById){
+      //         if(ifm){
+      //             if(ifm.contentDocument&&ifm.contentDocument.body.offsetHeight){
+      //                 ifm.height = ifm.contentDocument.body.offsetHeight;
+      //             }else if(ifm.Document&&ifm.Document.body.scrollHeight){
+      //                 ifm.height = ifm.Document.body.scrollHeight;
+      //             }
+      //         }
+      //     }
+      // }
+    </script>
+  </body>
 </html>
